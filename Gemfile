@@ -31,6 +31,12 @@ gem 'jbuilder', '2.5.0'
 # Use Devise for user authentication
 gem 'devise', '4.2.0'
 
+# User Stripe for payment processing
+gem 'stripe', '1.48.0'
+
+# Use Figaro for ENV variables
+gem 'figaro', '1.1.1'
+
 # Use Twitter Bootstrap library for front-end UI and layout
 gem 'bootstrap-sass', '3.3.7'
 
