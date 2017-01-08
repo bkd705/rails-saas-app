@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :users
   root to: 'pages#home'
   get 'about', to: 'pages#about'
   # resources has all rest routes, but we only want the 'create' POST route
