@@ -14,6 +14,11 @@ class Users::RegistrationsController < Devise::RegistrationsController
     end
   end
 
+  protected
+    def after_sign_up_path_for(resource)
+      new_user_profile_path(user_id: current_user.id)
+    end
+
   private
     def select_plan
       unless (params[:plan] == '1' || params[:plan] == '2')
