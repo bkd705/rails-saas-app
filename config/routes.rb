@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  devise_for :users
+  devise_for :users, controllers: { registrations: 'users/registrations' }
   root to: 'pages#home'
   get 'about', to: 'pages#about'
   # resources has all rest routes, but we only want the 'create' POST route
